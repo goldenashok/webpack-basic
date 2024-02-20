@@ -7,4 +7,17 @@
      ```sh
      npm install webpack webpack-cli --save-dev
      ```
+   - basic setup ```webpack.js```
+     ```sh
+     const path = require('path');
+      module.exports = {
+          entry: './src/index.js',
+          output: {
+              filename: 'bundle.js',
+              path:path.resolve(__dirname, './dist') // give absolute path
+          },
+          mode: 'none' // [development, production, none]
+      }
+     ```
+     
 2. ```
