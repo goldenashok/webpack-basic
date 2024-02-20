@@ -33,8 +33,8 @@
               ]
           }
       ```
-      - After set the rule file load from the local computer.
-      - instead of to load current directry we have to set the public path. insde the output object
+     - After set the rule file load from the local computer.
+     - instead of to load current directry we have to set the public path. insde the output object
         ```sh
            output: {
               filename: 'bundle.js',
@@ -42,7 +42,7 @@
               publicPath: './dist/'
           }
         ```
-     - ```installing node package for load image file```
+      - ```installing node package for load image file```
        ```sh
           npm install file-loader --save-dev
        ```
