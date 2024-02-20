@@ -113,41 +113,41 @@
 	    npm install babel-loader @babel/core @babel/preset-env --save-dev
 	    ```
 6. ```minify the JS file```
-        - This plugin used to minify the js file ( remove the space inside the file)
-        - webpack configuration
-            ```sh
-            const TerserPlugin= require('terser-webpack-plugin');
-            plugins: [new TerserPlugin]
-            ```
-        - installing plugin for minify the js
-            ```sh
-            npm install terser-webpack-plugin --save-dev
-            ```
+	- This plugin used to minify the js file ( remove the space inside the file)
+	- webpack configuration
+	    ```sh
+	    const TerserPlugin= require('terser-webpack-plugin');
+	    plugins: [new TerserPlugin]
+	    ```
+	- installing plugin for minify the js
+	    ```sh
+	    npm install terser-webpack-plugin --save-dev
+	    ```
 7. ```Extract the CSS file using plugin```
-        - This plugin used to extract the css file from the bundle.js and create separate css file
-        - ```webpack configuration```
-        - Then change the rules style-loader to MiniCssExtractPlugin.loader
-            ```sh
-            const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-            {
-                test: /\.css$/,
-                use: ['style.loader', 'css-loader']
-            },
+	- This plugin used to extract the css file from the bundle.js and create separate css file
+	- ```webpack configuration```
+	- Then change the rules style-loader to MiniCssExtractPlugin.loader
+	    ```sh
+	    const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+	    {
+		test: /\.css$/,
+		use: ['style.loader', 'css-loader']
+	    },
 			```
 			Instead of
-            ```sh
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
-            },
-            ```
-            ```sh
-            plugins: [new TerserPlugin, new MiniCssExtractPlugin({filename:'style.css'})]
-            ```
-        - ```installing packages for extract css```
-            ```sh
-            npm install mini-css-extract-plugin --save-dev
-            ```
+	    ```sh
+	    {
+		test: /\.css$/,
+		use: [MiniCssExtractPlugin.loader, 'css-loader']
+	    },
+	    ```
+	    ```sh
+	    plugins: [new TerserPlugin, new MiniCssExtractPlugin({filename:'style.css'})]
+	    ```
+	- ```installing packages for extract css```
+	    ```sh
+	    npm install mini-css-extract-plugin --save-dev
+	    ```
 8. Browser cache and filename hash
         - Without this plugin the index.html alway take file from server. it's reducing the performance
         - if you are using this plugin it will take first time form server. then take from browser cache without new file
