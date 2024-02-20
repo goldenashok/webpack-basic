@@ -90,28 +90,28 @@
 	    npm install sass sass-loader
 	     ```
 5. ```Convert ES6 to ES5```
-- it will convert ES6 to ES5 in the bundle.js
-- for this need babel configuration as well
-- ```.babelrc.js```
-    ```sh
-    module.exports = function(api) {
-	api.cache(true);
-	const presets = ['@babel/preset-env'];
-	return {presets};
-    }
-    ```
-- Webpack rules
-    ```sh
-    {
-	test: /\.js/,
-	exclude: /node_modules/,
-	use: 'babel-loader'
-    }
-    ```
-- installing loader package for conver es5 to es6
-    ```sh
-    npm install babel-loader @babel/core @babel/preset-env --save-dev
-    ```
+	- it will convert ES6 to ES5 in the bundle.js
+	- for this need babel configuration as well
+	- ```.babelrc.js```
+	    ```sh
+	    module.exports = function(api) {
+		api.cache(true);
+		const presets = ['@babel/preset-env'];
+		return {presets};
+	    }
+	    ```
+	- Webpack rules
+	    ```sh
+	    {
+		test: /\.js/,
+		exclude: /node_modules/,
+		use: 'babel-loader'
+	    }
+	    ```
+	- installing loader package for conver es5 to es6
+	    ```sh
+	    npm install babel-loader @babel/core @babel/preset-env --save-dev
+	    ```
     6. ```minify the JS file```
         - This plugin used to minify the js file ( remove the space inside the file)
         - webpack configuration
