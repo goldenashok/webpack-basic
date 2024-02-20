@@ -22,7 +22,7 @@
      
 2. ```Handling images in loader```
    - loader is a javascript library. it will handle the particular file type to load
-   - for load the file we have to set to rules in the webpack
+   - for load the file we have to setup the rules in the webpack
      ```sh
          module: {
            rules: [
@@ -33,8 +33,8 @@
            ]
          }
       ```
-    - After set the rule file load from the local computer.
-    - instead of to load current directry we have to set the public path. insde the output object
+    - After set the rule, the file load directly load from the local computer.
+    - instead of to load the file from the current directry we have to set the public path. inisde the output object
         ```sh
            output: {
               filename: 'bundle.js',
