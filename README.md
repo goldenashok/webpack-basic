@@ -63,7 +63,7 @@
              npm install style-loader css-loader --save-dev
           ```
 
-    4. ```Handling scss in loader```
+    4.  ```Handling scss in loader```
         - ```webpack configuration```
            ```sh
               module: {
