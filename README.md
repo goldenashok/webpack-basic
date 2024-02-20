@@ -112,7 +112,7 @@
 	    ```sh
 	    npm install babel-loader @babel/core @babel/preset-env --save-dev
 	    ```
-    6. ```minify the JS file```
+6. ```minify the JS file```
         - This plugin used to minify the js file ( remove the space inside the file)
         - webpack configuration
             ```sh
@@ -123,7 +123,7 @@
             ```sh
             npm install terser-webpack-plugin --save-dev
             ```
-    7. ```Extract the CSS file using plugin```
+7. ```Extract the CSS file using plugin```
         - This plugin used to extract the css file from the bundle.js and create separate css file
         - ```webpack configuration```
         - Then change the rules style-loader to MiniCssExtractPlugin.loader
@@ -148,7 +148,7 @@
             ```sh
             npm install mini-css-extract-plugin --save-dev
             ```
-    8. Browser cache and filename hash
+8. Browser cache and filename hash
         - Without this plugin the index.html alway take file from server. it's reducing the performance
         - if you are using this plugin it will take first time form server. then take from browser cache without new file
         - ```webpack configuration```
@@ -157,7 +157,7 @@
             filename: 'bundle.[contenthash].js',
             plugins: [new TerserPlugin, new MiniCssExtractPlugin({filename:'style.[contenthash].css'})]
             ```
-    9. Clean webpack
+9. Clean webpack
         - This will used to clean th the unwanted files from the dist folder
         - install npm plugin
             ```sh
