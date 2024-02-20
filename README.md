@@ -149,17 +149,17 @@
 	    npm install mini-css-extract-plugin --save-dev
 	    ```
 8. Browser cache and filename hash
-        - Without this plugin the index.html alway take file from server. it's reducing the performance
-        - if you are using this plugin it will take first time form server. then take from browser cache without new file
-        - ```webpack configuration```
-        - Add contenthash in front of the file extention
-            ```sh
-            filename: 'bundle.[contenthash].js',
-            plugins: [new TerserPlugin, new MiniCssExtractPlugin({filename:'style.[contenthash].css'})]
-            ```
+	- Without this plugin the index.html alway take file from server. it's reducing the performance
+	- if you are using this plugin it will take first time form server. then take from browser cache without new file
+	- ```webpack configuration```
+	- Add contenthash in front of the file extention
+	    ```sh
+	    filename: 'bundle.[contenthash].js',
+	    plugins: [new TerserPlugin, new MiniCssExtractPlugin({filename:'style.[contenthash].css'})]
+	    ```
 9. Clean webpack
-        - This will used to clean th the unwanted files from the dist folder
-        - install npm plugin
-            ```sh
-            npm install clean-webpack-plugin --save-dev
-            ```
+	- This will used to clean th the unwanted files from the dist folder
+	- install npm plugin
+	    ```sh
+	    npm install clean-webpack-plugin --save-dev
+	    ```
