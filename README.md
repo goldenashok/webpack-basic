@@ -63,33 +63,32 @@
              npm install style-loader css-loader --save-dev
           ```
 4.  ```Handling scss in loader```
-    
-- ```webpack configuration```
-
-   ```sh
-      module: {
-	    rules: [
-		{
-		    test: /\.s[ac]ss$/i,
-		    use: [
-			"style-loader",
-			"css-loader",
+	- ```webpack configuration```
+	
+	   ```sh
+	      module: {
+		    rules: [
 			{
-			    loader: "sass-loader",
-			    options: {
-				// Prefer `dart-sass`
-				implementation: require("sass"),
-			    },
-			},
+			    test: /\.s[ac]ss$/i,
+			    use: [
+				"style-loader",
+				"css-loader",
+				{
+				    loader: "sass-loader",
+				    options: {
+					// Prefer `dart-sass`
+					implementation: require("sass"),
+				    },
+				},
+			    ]
+			}
 		    ]
 		}
-	    ]
-	}
-     ```
- - ```installing loader package for load sass file```
-     ```sh
-    npm install sass sass-loader
-     ```
+	     ```
+	 - ```installing loader package for load sass file```
+	     ```sh
+	    npm install sass sass-loader
+	     ```
 5. ```Convert ES6 to ES5```
 - it will convert ES6 to ES5 in the bundle.js
 - for this need babel configuration as well
