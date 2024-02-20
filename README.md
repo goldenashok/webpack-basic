@@ -64,7 +64,9 @@
           ```
 
     4.  ```Handling scss in loader```
+    
         - ```webpack configuration```
+	
            ```sh
               module: {
                     rules: [
