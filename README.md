@@ -24,14 +24,14 @@
    - loader is a javascript library. it will handle the particular file type to load
    - for load the file we have to set to rules in the webpack
      ```sh
-      module: {
-              rules: [
-                  {
-                      test: /\.(png|jpg)$/,
-                      use: ['file-loader']
-                  }
-              ]
-          }
+         module: {
+           rules: [
+               {
+                   test: /\.(png|jpg)$/,
+                   use: ['file-loader']
+               }
+           ]
+         }
       ```
      - After set the rule file load from the local computer.
      - instead of to load current directry we have to set the public path. insde the output object
