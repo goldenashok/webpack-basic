@@ -62,7 +62,7 @@
           ```sh
              npm install style-loader css-loader --save-dev
           ```
-    4.  ```Handling scss in loader```
+4.  ```Handling scss in loader```
     
         - ```webpack configuration```
 	
@@ -90,7 +90,7 @@
              ```sh
             npm install sass sass-loader
              ```
-    5. ```Convert ES6 to ES5```
+5. ```Convert ES6 to ES5```
         - it will convert ES6 to ES5 in the bundle.js
         - for this need babel configuration as well
         - ```.babelrc.js```
